@@ -1,0 +1,13 @@
+{
+  "name": "sberoom",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Внутренний сервис управления долей удалённой работы (MVP).",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
