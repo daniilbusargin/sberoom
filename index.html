@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f7a2a" />
+  <title>Sberoom — удалёнка и офис в балансе</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">S</div>
+        <div class="brand__text">
+          <div class="brand__name">Sberoom</div>
+          <div class="brand__hint">Целевой показатель присутствия 70 / 30</div>
+        </div>
+      </div>
+      <div class="user-chip" id="user-chip"></div>
+    </div>
+  </header>
+
+  <main id="view" class="view" aria-live="polite"></main>
+
+  <nav class="tabbar" role="tablist" aria-label="Основная навигация">
+    <button class="tabbar__btn" data-view="home" role="tab">
+      <span class="tabbar__icon">📊</span>
+      <span class="tabbar__label">Сводка</span>
+    </button>
+    <button class="tabbar__btn" data-view="calendar" role="tab">
+      <span class="tabbar__icon">📅</span>
+      <span class="tabbar__label">Календарь</span>
+    </button>
+    <button class="tabbar__btn" data-view="teams" role="tab">
+      <span class="tabbar__icon">👥</span>
+      <span class="tabbar__label">Команды</span>
+    </button>
+    <button class="tabbar__btn" data-view="me" role="tab">
+      <span class="tabbar__icon">👤</span>
+      <span class="tabbar__label">Я</span>
+    </button>
+  </nav>
+
+  <div id="modal-root" class="modal-root" hidden></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
